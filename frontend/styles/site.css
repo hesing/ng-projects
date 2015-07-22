@@ -1,0 +1,128 @@
+﻿input.ng-touched.ng-invalid {
+    border: 2px #ff0000 solid;
+}
+
+.ng-move {
+    -webkit-animation: pulse 0.5s;
+    -moz-animation: pulse 0.5s;
+    -o-animation: pulse 0.5s;
+    animation: pulse 0.5s;
+}
+
+.ng-enter {
+    -webkit-animation: zoomIn 0.5s;
+    -moz-animation: zoomIn 0.5s;
+    -o-animation: zoomIn 0.5s;
+    animation: zoomIn 0.5s;
+}
+
+.ng-hide-add {
+    -webkit-animation: fadeOut 0.9s;
+    -moz-animation: fadeOut 0.9s;
+    -o-animation: fadeOut 0.9s;
+    animation: fadeOut 0.9s;
+    display: block !important;
+}
+
+.ng-hide-remove {
+    -webkit-animation: fadeIn 0.9s;
+    -moz-animation: fadeIn 0.9s;
+    -o-animation: fadeIn 0.9s;
+    animation: fadeIn 0.9s;
+    display: block !important;
+}
+
+.work-spinner {
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 28px;
+}
+
+table > tbody > tr {
+    border-top: 1px solid black;
+}
+
+.starpreview {
+    color: rgba(255, 255, 128, 128);
+}
+
+pre {
+    font-size: smaller;
+}
+
+.has-success .help-block {
+    display: none;
+}
+
+/*** loading ***/
+
+.loader {
+  width: 250px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-family: helvetica, arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #ce4233;
+  letter-spacing: 0.2em;
+}
+.loader::before, .loader::after {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: #ce4233;
+  position: absolute;
+  -webkit-animation: load .7s infinite alternate ease-in-out;
+          animation: load .7s infinite alternate ease-in-out;
+}
+.loader::before {
+  top: 0;
+}
+.loader::after {
+  bottom: 0;
+}
+
+@-webkit-keyframes load {
+  0% {
+    left: 0;
+    height: 30px;
+    width: 15px;
+  }
+  50% {
+    height: 8px;
+    width: 40px;
+  }
+  100% {
+    left: 235px;
+    height: 30px;
+    width: 15px;
+  }
+}
+
+@keyframes load {
+  0% {
+    left: 0;
+    height: 30px;
+    width: 15px;
+  }
+  50% {
+    height: 8px;
+    width: 40px;
+  }
+  100% {
+    left: 235px;
+    height: 30px;
+    width: 15px;
+  }
+}
+
+
